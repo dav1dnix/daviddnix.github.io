@@ -1,2 +1,2 @@
-# dps910.xyz-rewrite
-A rewrite of my website dps910.xyz.
+## dps910.xyz-rewrite ✨
+A dps910.xyz rewrite 🚀

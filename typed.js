@@ -1,4 +1,4 @@
 const typed = new Typed(".typing", {
-    strings: ["dps ✨"],
+    strings: ["dps 🦊"],
     typeSpeed: 30,
 });

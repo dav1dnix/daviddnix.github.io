@@ -9,126 +9,23 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
-
-        <style>
-            body {
-                height: 100%;
-                width: 100%;
-                font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-                background-color: rgb(0, 80, 129);
-                background-image: url("https://i.redd.it/ksvgnqtmx8y31.jpg");
-            }
-            
-            .title {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-            }
-
-            .title h2 {
-                text-align: center;
-            }
-
-            .fa {
-                position: absolute;
-                top: 70%;
-                left: 10%;
-		        color: white;
-            }
-
-            .fa a {
-                color: white;
-                text-decoration: none;
-            }
-
-            .footer {
-                position: absolute;
-                bottom: 0;
-                height: 40px;
-                left: 50%;
-                color: white;
-                transform: translate(-50%, -50%)
-            }
-
-            .terminal {
-                position: absolute;
-                height: 200px;
-                width: 400px;
-                background-color: #000;
-                left: 65%;
-                top: 20%;
-            }
-
-            .typed {
-                position: absolute;
-                left: 67.5%;
-                top: 25%;
-            }
-
-            span.typed-cursor {
-                opacity: 0;
-            }
-
-            @media only screen and (max-width: 600px) {
-                .terminal {
-                    visibility: hidden;
-                }
-            }
-
-            @media only screen and (max-width: 600px) {
-                .typed {
-                    visibility: hidden;
-                }
-            }
-
-        </style>
-
+        <link rel="stylesheet" href="css/style.css"
         <!-- JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
     </head>
     <body>
         <div class="title">
-            <h1>dps910</h1>
-            <h2>dev 💻</h2>
+            <h1>dav1d</h1>
+            <h2>hi</h2>
         </div>
 
         <div class="fa" style='font-family:BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif'>
             <i class="fab fa-github"></i> <a href="https://github.com/dps910">dps910</a><br><br>
-	        <i class="fab fa-discord"></i> <span id="copy">dps ✨#1448</span><br><br>
-            <i class="fab fa-twitter-square"></i> <a href="twitter.com/dpsdev_">@dpsdev_</a><br><br>
+	        <i class="fab fa-discord"></i> <span id="copy">dps#0150</span><br><br>
+            <i class="fab fa-twitter-square"></i> <a href="twitter.com/dpsxyz">@dpsdev_</a><br><br>
             <i class="fab fa-telegram"></i> <a href="t.me/dps">@dps</a><br><br>
         </div>
-
-        <div class="terminal"></div>
-        <span class="typed"></span>
-
-        <!-- Typed.js -->
-        <script>
-            const typed = new Typed(".typed", {
-                strings: [
-                    "<span style='color: white;'>$ echo -e '\\e[35mHi!\\e[0m'</span><br><span style='color: purple;'>Hi!</span>",
-                ],
-                typeSpeed: 20
-            });
-            console.log(typed)
-        </script>
-
-        <!-- Copy discord name -->
-        <script>
-            const discordcopy = document.querySelector("#copy")
-            discordcopy.onclick = (() => {
-                document.execCommand("copy")
-            });
-
-            discordcopy.addEventListener("copy", (event) => {
-                if (event.clipboardData) {
-                    event.clipboardData.setData("text/plain", discordcopy.textContent)
-                }
-            })
-        </script>
 
         <div class="footer">
             (c) dps | 2019

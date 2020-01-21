@@ -6,6 +6,7 @@ body {
     font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-image: url("https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar ol {

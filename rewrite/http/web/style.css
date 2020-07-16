@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+   overflow: hidden;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: #fff;
+   background-color: #000;
+   padding: 10px;
+   margin: auto;
+   cursor: url("cursor.cur"), auto;
+   overflow: hidden;
+}
+
+/* Text */
+.sections {
+   text-align: center;
+}
+
+.sections ol {
+   list-style: none;
+   padding-left: 0;
+}
+
+.section {
+   margin-top: 1em;
+}
+
+.section a {
+   font-size: 50px;
+   text-shadow: 5px 5px 3px purple;
+}
+
+.section a:link {
+   color: lightblue;
+   text-decoration: none;
+}
+
+.section a:hover {
+   color: hotpink;
+}
+
+.section a:visited {
+   color: lightblue;
+}
+
+.section a:hover {
+   color: hotpink;
+}
+
+/* Box popup */
+#wrapper {
+    padding: 20px;
+    text-align: center;
+}
+
+.button {
+    font-size: 25px;
+    color: #fff;
+}
+
+.button:hover {
+    color: hotpink;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    visibility: hidden;
+}
+
+.overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 25px auto;
+    padding: 20px;
+    background: #000;
+    width: 400px;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: hotpink;
+}
+
+.popup .content {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.popup p {
+    margin: 0 0 1em;
+    color: #fff;
+}

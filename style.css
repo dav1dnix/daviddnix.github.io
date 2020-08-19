@@ -1,0 +1,157 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  background-color: #666;
+  padding: 10px;
+  margin: auto;
+  cursor: url("cursor.cur"), auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text */
+.sections {
+  text-align: center;
+}
+
+.sections ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section {
+  margin-top: 1em;
+}
+
+.section a {
+  font-size: 75px;
+}
+
+.section a:link {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.section a:visited {
+  color: lightblue;
+}
+
+.section a:hover {
+  color: hotpink;
+}
+
+/* Box popup */
+#wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  font-size: 25px;
+  color: #fff;
+}
+
+.button:hover {
+  color: hotpink;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #666;
+  visibility: hidden;
+}
+
+.overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 25px auto;
+  padding: 40px;
+  background: #666;
+  width: 300px;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.popup .content {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.popup p {
+  margin: 0 0 1em;
+  color: #fff;
+}
+
+a:link {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:visited {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* 
+    Flex grow factor, shrink factor and basis
+    flex: <grow shrink basis>
+    This will essentially push the footer down so that it is at the bottom of the page, below the div element.
+*/
+.push {
+  flex: 1 0 auto;
+}
+
+/* 
+    ".content p" is positioned relative and ".content p img" is positioned absolute
+    This will make sure that the image is positioned absolutely to the
+    right containing element in this instance
+    src: https://stackoverflow.com/a/40972941
+*/
+
+.content p {
+  font-size: 22.5px;
+}
+
+.content p img {
+  position: absolute;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* Remove image from site if browser window is 600px wide or less. */
+@media screen and (max-width: 600px) {
+  #image {
+    position: absolute;
+    bottom: 200px;
+    right: 10px;
+    padding-right: 60px;
+    display: none;
+  }
+}
+
+.footer {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}

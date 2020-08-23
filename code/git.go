@@ -5,12 +5,20 @@ import (
 	"log"
 	"fmt"
 	"flag"
+	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/go-git/go-git/v5/storage/memory"
 	"github.com/go-git/go-git/v5/config"
+	"github.com/dps910/dps910.github.io/code/functions"
 )
 
 var (
-	repo = flag.String("repo", "", "GitHub repository")
+	repository = flag.String("repository", "", "Git repository")
+	username = flag.String("username", "", "Git Username")
+	password = flag.String("password", "", "Git password")
+	auth = &http.BasicAuth {
+		Username: "dos819",
+		Password: "thisismytokenlol/s",
+	}
 )
 
 func main() {
@@ -23,7 +31,7 @@ func main() {
 	// Create remote with name of remote and URL of repository
 	_, err := r.CreateRemote(&config.RemoteConfig{
 		Name: "website",
-		URLs: []string{"https://github.com/" + *repo},
+		URLs: []string{"https://github.com/" + *repository},
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -37,5 +45,18 @@ func main() {
 
 	for _, r := range list {
 		fmt.Println(r)
+	}
+
+	// Open git repository, if path doesn't contain valid repository ErrRepositoryNotExists is returned.
+	git.PlainOpen("dps910/dps910.github.io")
+
+	// Push code to remote repository.
+	functions.Info("Git Push")
+	err = r.Push(&git.PushOptions{
+		RemoteName: "website",
+		Auth: auth,
+	})
+	if err != nil {
+		log.Fatal(err)
 	}
 }

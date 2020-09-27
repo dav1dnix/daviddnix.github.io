@@ -28,6 +28,7 @@ body {
     inset: 0;
     visibility: hidden;
     opacity: 0;
+    background: #999;
 }
 
 .overlay:target {
@@ -37,7 +38,7 @@ body {
 
 .popup {
     background: #999;
-    margin: 60px auto;
+    margin: 0px auto;
     padding: 20px;
     width: 300px;
     position: relative
@@ -60,6 +61,7 @@ body {
     max-height: 30%;
     overflow: auto;
     color: #fff;
+    position: fixed;
 }
 
 @media screen and (max-width: 800px) {

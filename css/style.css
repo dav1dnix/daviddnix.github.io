@@ -65,6 +65,12 @@ body {
 @media screen and (max-width: 700px) {
     .popup {
         width: 70%;
+        margin: 0 auto;
+        background: var(--main-color);
+        overflow-y: auto;
+    }
+    .overlay {
+        background: var(--main-color);
     }
 }
 

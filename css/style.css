@@ -22,18 +22,66 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/* Popup box overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: #999;
+    margin: 60px auto;
+    padding: 20px;
+    width: 300px;
+    position: relative
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 70%;
+    }
+}
+
 .main {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    z-index: -1;
 }
 
 .main p {
     display: inline-block;
-    width: 300px;
+    width: 350px;
     height: 10px;
+    text-align: center;
 }
 
 .main h2 {
@@ -49,15 +97,15 @@ body {
 }
 
 /* Make sure that both visited and unvisited links are the same colour */
-.icons a:link {
-    color: #000;
+a:link {
+    color: #fff;
 }
 
-.icons a:visited {
-    color: #000;
+a:visited {
+    color: #fff;
 }
 
-.icons a img {
+.icons img {
     position: absolute;
     padding-left: 5px;
     color: pink;
@@ -65,5 +113,10 @@ body {
 
 .footer {
     position: absolute;
-    bottom: 0; height: 40px; left: 50%; color: #fff; transform: translate(-50%, -50%);
+    bottom: 0; 
+    height: 40px; 
+    left: 50%; 
+    color: #fff; 
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }

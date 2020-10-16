@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+/* Selector colour when highlighting text */
+::selection {
+    background: #fff;
+}
 
 .title {
     padding-left: 15px;

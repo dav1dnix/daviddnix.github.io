@@ -13,6 +13,9 @@
         <!-- Chrome theme colour for Android -->
         <meta name="theme-color" content="#000">
 
+        <!-- JS -->
+        <script src="./js/clock.js"></script>
+
         <!-- Twitter -->
         <meta name="twitter:card" content="david" />
         <meta name="twitter:creator" content="@d_a_v_i_d_d_d_d" />
@@ -25,11 +28,7 @@
         <!-- Favicon -->
         <link rel="icon" type="image/gif" href="https://media4.giphy.com/media/3ohs4CacylzFaHjMM8/source.gif">
     </head>
-    <body>
-        <div class="title">
-            <h1>david</h1>
-        </div>
-
+    <body onload="Clock()">
         <!-- This is going to be the popup box with content.. -->
         <div id="files" class="overlay">
             <div class="popup">
@@ -75,6 +74,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- Nav bar (provide navigation links) -->
+        <nav class="nav">
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>    
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><span id="clock"></span></li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="main">
             <h2>about</h2>

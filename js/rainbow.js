@@ -10,7 +10,7 @@ const indigo = "./assets/icons/rainbow/indigo.png";
 const violet = "./assets/icons/rainbow/violet.png";
 
 
-// Every 0.1 seconds, change icon in order
+// Every second, change icon in order
 let current = 0;
 const icons = [red, orange, yellow, green, blue, indigo, violet];
 window.setInterval(function() {

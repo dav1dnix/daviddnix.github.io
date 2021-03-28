@@ -132,9 +132,10 @@ a:visited {
     z-index: -1;
 }
 
-nav {
+.nav {
     background-color: #000;
     opacity: 0.5;
+    border-radius: 10px;
 }
 
 .nav ul {
@@ -142,14 +143,24 @@ nav {
     padding: 1em;
 }
 
-nav a {
-    display: block;
-    margin-right: 25px;
-}
-
-nav a:hover {
+.nav a:hover {
     color: pink;
     text-decoration: none;
+}
+
+.nav-left {
+    display: inline-block;
+    color: white;
+}
+
+.nav-left ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.nav-right {
+    color: white;
+    float: right;
 }
 
 #clock {

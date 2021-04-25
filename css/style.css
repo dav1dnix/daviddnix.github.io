@@ -20,17 +20,19 @@ body {
     padding-left: 15px;
     float: left;
     background-image: linear-gradient(to right, #e66465, #9198e5);
+    background-clip: text; /* was getting a warning about adding the standard clip for compatibility, that's why I have it twice */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* Popup box overlay */
 .overlay {
+    height: 50px;
+    width: 50px;
     position: fixed;
     inset: 0;
     visibility: hidden;
     opacity: 0;
-    background: #999;
 }
 
 .overlay:target {
@@ -39,11 +41,14 @@ body {
 }
 
 .popup {
-    background: #999;
+    background: #000;
     margin: 0px auto;
     padding: 20px;
     width: 300px;
-    position: relative
+    position: relative;
+    z-index: 1;
+    left: 800px;
+    top: 300px;
 }
 
 .popup h2 {
@@ -60,22 +65,9 @@ body {
 }
 
 .popup .content {
-    max-height: 30%;
     overflow: auto;
     color: #fff;
-    position: fixed;
-}
-
-@media screen and (max-width: 800px) {
-    .popup {
-        width: 70%;
-        margin: 0 auto;
-        background: var(--main-color);
-        overflow-y: auto;
-    }
-    .overlay {
-        background: var(--main-color);
-    }
+    height: 300px;
 }
 
 .main {
@@ -133,6 +125,7 @@ a:visited {
 }
 
 .nav {
+    position: relative;
     background-color: #000;
     opacity: 0.5;
     border-radius: 10px;

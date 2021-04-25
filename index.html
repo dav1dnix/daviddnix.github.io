@@ -30,13 +30,25 @@
     </head>
     <body onload="Clock()">
         <script src="js/rainbow.js"></script>
-        <!-- This is going to be the popup box with content.. -->
+        <!-- This is going to have the popup boxes with content.. -->
+        <div id="github" class="overlay">
+            <div class="popup">
+                <h2>GitHub</h2>
+                <a class="close" href="#">&times;</a>
+
+                <!-- Use ID so that I can use getElementById with the JavaScript (make sure that the data goes here and no where else) -->
+                <div class="content" id="git">
+                    
+                </div>
+            </div>
+        </div>
+
         <div id="files" class="overlay">
             <div class="popup">
                 <h2>Files</h2>
                 <a class="close" href="#">&times;</a>
                 <div class="content icons">
-                    Windows <img src="./assets/icons/windows.png">
+                    Windows 
                     <ul>
                         <li><a href="https://the-eye.eu/public/MSDN/Windows%20XP/en_windows_xp_professional_x64.iso" target=_blank rel=no-referrer>Windows XP</a></li>
                         <li><a href="https://the-eye.eu/public/MSDN/Windows%20Vista/en_windows_vista_ultimate_sp2_checked_build_x64_dvd_342433.iso" target=_blank rel=no-referrer>Windows Vista</a></li>
@@ -44,7 +56,7 @@
                         <li><a href="https://the-eye.eu/public/MSDN/Windows%208.1/en_windows_8_1_x64_dvd_2707217.iso" target=_blank rel=no-referrer>Windows 8.1</a></li>
                         <li><a href="https://the-eye.eu/public/MSDN/Windows%2010/en_windows_10_multiple_editions_x64_dvd_6846432.iso" target=_blank rel=no-referrer>Windows 10</a></li>
                     </ul>
-                    Linux <img src="./assets/icons/ubuntu.png">
+                    Linux 
                     <ul>
                         <li><a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd" target=_blank rel=no-referrer>Debian</a></li>
                         <li><a href="https://nixos.org/download.html#" target=_blank rel=no-referrer>NixOS</a></li>
@@ -53,7 +65,7 @@
                         <li><a href="https://releases.ubuntu.com" target=_blank rel=no-referrer>Ubuntu</a></li>
                     </ul>
                     <!-- Credit to http://macinstallers.tech for the download links -->
-                    macOS <img src="./assets/icons/apple.png" title="http://macinstallers.tech">
+                    macOS 
                     <ul>
                         <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=bwUq&id=1ys8_P1ZvEPqhKBKoeVPB9ozqAnG1iId_" target=_blank rel=no-referrer>Snow Leopard</a></li>
                         <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=pAPk&id=1xBNawAhPky6IPJFSMcJQXpaw5trVG-Ah" target=_blank rel=no-referrer>Lion</a></li>

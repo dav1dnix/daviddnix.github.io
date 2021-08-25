@@ -31,63 +31,6 @@
     </head>
     <body onload="Clock()">
         <script src="js/rainbow.js"></script>
-        <!-- This is going to have the popup boxes with content.. -->
-        <div id="github" class="overlay">
-            <div class="popup">
-                <h2>GitHub</h2>
-                <a class="close" href="#">&times;</a>
-
-                <!-- Use ID so that I can use getElementById with the JavaScript (make sure that the data goes here and no where else) -->
-                <div class="content" id="git">
-                    
-                </div>
-            </div>
-        </div>
-
-        <div id="files" class="overlay">
-            <div class="popup">
-                <h2>Files</h2>
-                <a class="close" href="#">&times;</a>
-                <div class="content icons">
-                    Windows 
-                    <ul>
-                        <li><a href="https://the-eye.eu/public/MSDN/Windows%20XP/en_windows_xp_professional_x64.iso" target=_blank rel=no-referrer>Windows XP</a></li>
-                        <li><a href="https://the-eye.eu/public/MSDN/Windows%20Vista/en_windows_vista_ultimate_sp2_checked_build_x64_dvd_342433.iso" target=_blank rel=no-referrer>Windows Vista</a></li>
-                        <li><a href="https://the-eye.eu/public/MSDN/Windows%207/en_windows_7_professional_x64_dvd_x15-65805.iso" target=_blank rel=no-referrer>Windows 7</a></li>
-                        <li><a href="https://the-eye.eu/public/MSDN/Windows%208.1/en_windows_8_1_x64_dvd_2707217.iso" target=_blank rel=no-referrer>Windows 8.1</a></li>
-                        <li><a href="https://the-eye.eu/public/MSDN/Windows%2010/en_windows_10_multiple_editions_x64_dvd_6846432.iso" target=_blank rel=no-referrer>Windows 10</a></li>
-                    </ul>
-                    Linux 
-                    <ul>
-                        <li><a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd" target=_blank rel=no-referrer>Debian</a></li>
-                        <li><a href="https://nixos.org/download.html#" target=_blank rel=no-referrer>NixOS</a></li>
-                        <li><a href="http://mirrors.evowise.com/archlinux/iso" target=_blank rel=no-referrer>Arch Linux</a></li>
-                        <li><a href="https://bouncer.gentoo.org/fetch/root/all/releases/amd64/autobuilds" target=_blank rel=no-referrer>Gentoo</a></li>
-                        <li><a href="https://releases.ubuntu.com" target=_blank rel=no-referrer>Ubuntu</a></li>
-                    </ul>
-                    <!-- Credit to http://macinstallers.tech for the download links -->
-                    macOS 
-                    <ul>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=bwUq&id=1ys8_P1ZvEPqhKBKoeVPB9ozqAnG1iId_" target=_blank rel=no-referrer>Snow Leopard</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=pAPk&id=1xBNawAhPky6IPJFSMcJQXpaw5trVG-Ah" target=_blank rel=no-referrer>Lion</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=Mqc2&id=1vSQFihH53hn5nemiJPx9P3MPB0kh6eHX" target=_blank rel=no-referrer>Mountain Lion</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=nHEI&id=1bXV67qYUa2pP04yXMjUjFdB7O1aAQuMw" target=_blank rel=no-referrer>Mavericks</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=bRtA&id=1YEKSMAniX--tXWSgBnAK7Vt0wrL1WpiA" target=_blank rel=no-referrer>Yosemite</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=Y1lA&id=1lS4VardnEoCz9e4YIN92Jfi0iUB1qqiQ" target=_blank rel=no-referrer>El Capitan</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=AkRp&id=1ai19kA7BKBIfaH9HsU9PDH9zoZ_-N1DE" target=_blank rel=no-referrer>Sierra</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=s7VR&id=1yY4ES_mmqTQYi7SSstfC4BvN8Dl100ow" target=_blank rel=no-referrer>High Sierra</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=7m9D&id=1n4sYdtHcUebnwYG_FKrgnjq1cVPW-2ta" target=_blank rel=no-referrer>Mojave</a></li>
-                        <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=Biny&id=1qiwAFy5TEJCYjXV_gEhz3r3QQO_vP7zJ" target=_blank rel=no-referrer>Catalina</a></li>
-                    </ul>
-                    Utilities
-                    <ul>
-                        <li><a href="https://github.com/corpnewt/gibMacOS" target=_blank rel=no-referrer>gibMacOS</a></li>
-                        <li><a href="https://dortania.github.io/OpenCore-Install-Guide/" target=_blank rel=no-referrer>OpenCore Install Guide</a></li>
-                        <li><a href="https://downloads.sourceforge.net/gparted/gparted-live-1.1.0-5-amd64.iso" target=_blank rel=no-referrer>GParted</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <!-- Nav bar (provide navigation links) -->
         <nav class="nav">

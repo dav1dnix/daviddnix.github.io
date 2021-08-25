@@ -25,52 +25,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Popup box overlay */
-.overlay {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    inset: 0;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.popup {
-    background: #000;
-    margin: 0px auto;
-    padding: 20px;
-    width: 300px;
-    position: relative;
-    z-index: 1;
-    left: 800px;
-    top: 300px;
-    border-radius: 10px;
-}
-
-.popup h2 {
-    margin-top: 0;
-    color: #fff;
-}
-
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.popup .content {
-    overflow: auto;
-    color: #fff;
-    height: 300px;
-}
-
 .main {
     position: absolute;
     top: 50%;
